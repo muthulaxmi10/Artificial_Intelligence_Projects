@@ -138,6 +138,6 @@ The OpenAI API requires usage credits. If credits are unavailable, the applicati
 
 ---
 
-## Author
+## Muthulaxmi Lakhani
 
 Your Name
