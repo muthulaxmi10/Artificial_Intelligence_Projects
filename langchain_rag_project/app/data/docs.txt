@@ -1,1 +1,27 @@
+LangChain is a framework designed to simplify the development of applications powered by large language models (LLMs).
+It provides abstractions for prompts, chains, memory, agents, and retrieval-based question answering systems.
 
+Retrieval Augmented Generation (RAG) is a technique that combines information retrieval with text generation.
+In RAG, relevant documents are retrieved from a vector database and passed as context to the language model
+to generate more accurate and grounded responses.
+
+Hugging Face provides a platform that hosts thousands of open-source machine learning models.
+It offers the Hugging Face Hub, which allows developers to use models via APIs or download them locally.
+Popular models include BERT, RoBERTa, T5, and Mistral.
+
+FAISS (Facebook AI Similarity Search) is a library developed by Meta for efficient similarity search and clustering
+of dense vectors. It is commonly used in RAG pipelines to store and retrieve document embeddings.
+
+In a typical LangChain RAG pipeline, documents are first loaded and split into smaller chunks.
+Each chunk is converted into embeddings using a transformer-based embedding model.
+These embeddings are stored in a vector database such as FAISS, Chroma, or Pinecone.
+
+When a user asks a question, LangChain retrieves the most relevant chunks from the vector store
+using semantic similarity search. These retrieved chunks are then passed to the language model
+along with the user’s query to generate a final answer.
+
+Mistral is a high-performance open-source large language model designed for instruction-following tasks.
+It is commonly used with Hugging Face Inference API and works well for RAG-based question answering systems.
+
+RAG systems help reduce hallucinations by grounding responses in retrieved documents.
+They are widely used in chatbots, internal knowledge bases, customer support systems, and search applications.
